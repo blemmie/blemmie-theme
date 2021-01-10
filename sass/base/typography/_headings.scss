@@ -1,0 +1,47 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	color: $black;
+	margin: 0 0 .85em;
+}
+
+
+.site-title {
+	font-family: $font__serif;
+	font-weight: 300;
+
+	a,
+	a:visited {
+		color: $black;
+		background-color: $color__primary;
+		text-decoration: none;
+		transition: background-color .15s ease-in-out;
+	}
+
+	a:hover,
+	a:active,
+	a:focus {
+		background-color: transparent;
+	}
+}
+
+
+h1 {
+	font-family: $font__serif;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: $font__serif;
+	font-weight: 300;
+	border-bottom: 2px solid $black;
+	padding-bottom: .5em; 
+}
+
+body.home h1 {
+	display: none;
+}

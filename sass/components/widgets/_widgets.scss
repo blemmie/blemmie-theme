@@ -1,0 +1,47 @@
+.widget-area {
+	border-top: 2px solid $black;
+	margin-top: 2em;
+	padding-top: 1em;
+}
+
+.widget {
+	margin: 0 0 1.5em;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+
+	&:not(.widget_search) {
+		font-size: .8em;
+	}
+}
+
+.widget_search {		
+	background-color: $color__secondary;
+	padding: 1em;
+
+	.search-form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	label {
+		flex: 1 1 70%; 
+	}
+	.search-field {
+		border: none;
+		border-radius: 0;
+		font-size: inherit;
+		padding: 5px 10px;
+		width: 100%;
+	}
+	.search-submit {
+		background-color: $color__primary;
+		border: none;
+		border-radius: 0;
+		flex: 1 1 30%; 
+		font-size: inherit;
+		padding: 5px 10px;
+	}
+}

@@ -1,0 +1,18 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: $color__primary;
+	color: $black;
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+
+	&:hover {
+		border-color: $color__secondary;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}

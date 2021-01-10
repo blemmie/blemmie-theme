@@ -1,0 +1,47 @@
+.main-navigation {
+
+	a {
+		color: $black;
+		display: block;
+		margin: 0 1em; 
+		padding: .1em 0;
+		position: relative;
+		text-decoration: none;
+		text-transform: lowercase;
+
+		&:before {
+			transition: all .25s ease-in-out;
+			content: '';
+			background-color: transparent;
+			height: 1px;
+			width: 100%;
+
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:hover:before {
+			background-color: $black;
+			height: 2px;
+		}
+	}
+
+	ul, ol {
+		@include list-reset();
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+		&:before {
+			background-color: $color__secondary;
+			height: 2px;
+		}
+	}
+}

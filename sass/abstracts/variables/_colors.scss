@@ -1,0 +1,34 @@
+$black: #1a1a1a;
+$white: #fff;
+$gray-50:  #eee;
+
+$color__text: #2d2d2d; // previous 263238
+$color__primary: #ffea00; // #F5DF4D; pantone yellow  
+$color__secondary: #304ffe;
+$color__text-understated: lighten($color__text, 25%);
+
+
+$color__background-body: #fafafa;
+
+
+$color__background-screen: #fafafa;
+$color__background-hr: $color__primary;
+$color__background-button: $color__secondary;
+$color__background-pre: $gray-50;
+$color__background-ins: #fff9c0;
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $color__secondary; //blue
+$color__link-visited: $color__secondary; //blue
+$color__link-hover: $black;
+$color__text-main: #404040;
+
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: $black;
+$color__border-abbr: #666;
+
+

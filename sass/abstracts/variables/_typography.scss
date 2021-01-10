@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('../fonts/AvenirNext_Variable.ttf') format('truetype');
+}
+
+// stylelint-disable value-keyword-case
+$font__main: "Avenir Next", Century Gothic, CenturyGothic, sans-serif;
+$font__serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$font__line-height: 2.15em;
+
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+body {
+	font-family: $font__main;
+	font-weight: 400;
+	color: $color__text;
+	line-height: $font__line-height;
+}
