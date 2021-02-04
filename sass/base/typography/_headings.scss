@@ -32,14 +32,17 @@ h6 {
 
 h1 {
 	font-family: $font__serif;
+	font-size: 1.75em;
 	font-weight: 300;
 }
 
 h2 {
+	//background-image: $background__pattern;
 	font-family: $font__serif;
+	font-size: 1.55em;
 	font-weight: 300;
-	border-bottom: 2px solid $black;
-	padding-bottom: .5em; 
+	border: 2px solid $black;
+	padding: .5em; 
 }
 
 body.home h1 {

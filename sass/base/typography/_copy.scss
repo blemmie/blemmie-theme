@@ -47,15 +47,17 @@ big {
 }
 
 p {
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
 }
 
+
 p:last-of-type {
-	margin-bottom: 2em;
+	margin-bottom: 2.4em;
 }
 
 a, a:visited {
 	color: $color__secondary;
+	transition: all .25s ease-in-out;
 }
 
 p b, p strong {

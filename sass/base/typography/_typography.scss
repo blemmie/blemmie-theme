@@ -6,8 +6,18 @@ optgroup,
 textarea {
 	color: $color__text;
 	font-family: $font__main;
-	font-size: 1rem;
-	line-height: $font__line-height;
+	font-size: 110%;
+	font-size: calc(1.2em + 0.2vw);
+	line-height: 1.75em;
+
+	@media (min-width: 768px) {
+		font-size: 115%;
+		font-size: calc(1.2em + 0.2vw);
+	}
+	@media (min-width: 1024px) {
+		font-size: 135%;
+		font-size: calc(1.2em + 0.2vw);
+	}
 }
 
 @import "headings";

@@ -10,9 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-		TEST
-
+	<main id="primary" class="site-main works">
 		<?php
 		while ( have_posts() ) :
 			the_post();

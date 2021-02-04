@@ -3,11 +3,19 @@
 	a {
 		color: $black;
 		display: block;
-		margin: 0 1em; 
+		margin: 0 .2em; 
 		padding: .1em 0;
 		position: relative;
 		text-decoration: none;
 		text-transform: lowercase;
+
+		@media (min-width: 450px) {
+			margin: 0 .5em; 
+		}
+
+		@media (min-width: 450px) {
+			margin: 0 1em; 
+		}
 
 		&:before {
 			transition: all .25s ease-in-out;
@@ -33,6 +41,14 @@
 
 	li {
 		display: inline-block;
+	}
+
+	li:first-child a {
+		margin-left: 0;
+	}
+
+	li:last-child a {
+		margin-right: 0;
 	}
 
 	.current_page_item > a,
