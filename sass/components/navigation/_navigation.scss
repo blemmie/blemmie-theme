@@ -61,3 +61,15 @@
 		}
 	}
 }
+
+// active states work & blog
+
+.sgl-cat-work .main-navigation .menu-item-175 a:before {
+	background-color: $color__secondary;
+	height: 2px;
+}
+
+.sgl-cat-blog .main-navigation .menu-item-239 a:before {
+	background-color: $color__secondary;
+	height: 2px;
+}

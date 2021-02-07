@@ -37,8 +37,8 @@ ul.wp-block-latest-posts {
 }
 
 h1.entry-title {
-	border-bottom: 2px solid $black;
-	padding-bottom: .5em; 
+	//border-bottom: 2px solid $black;
+	//padding-bottom: .5em; 
 }
 
 .wp-block-latest-posts__post-author,
@@ -62,7 +62,6 @@ h1.entry-title {
 	background-color: $white;
 	line-height: 0;
 	margin-top: 1em;
-	padding: 1em;
 	text-align: center;
 
 	img {
@@ -111,7 +110,11 @@ body.search-results {
 
   	li {
   		background-color: white;
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
   		position: relative;
+  		line-height: 0;
   		text-align: center;
   	}
 

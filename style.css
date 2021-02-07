@@ -881,6 +881,16 @@ textarea {
 	height: 2px;
 }
 
+.sgl-cat-work .main-navigation .menu-item-175 a:before {
+	background-color: #304ffe;
+	height: 2px;
+}
+
+.sgl-cat-blog .main-navigation .menu-item-239 a:before {
+	background-color: #304ffe;
+	height: 2px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -924,11 +934,6 @@ ul.wp-block-latest-posts li {
 	margin-bottom: 2em;
 }
 
-h1.entry-title {
-	border-bottom: 2px solid #1a1a1a;
-	padding-bottom: .5em;
-}
-
 .wp-block-latest-posts__post-author,
 .wp-block-latest-posts__post-date,
 .entry-meta,
@@ -952,7 +957,6 @@ h1.entry-title {
 	background-color: whitesmoke;
 	line-height: 0;
 	margin-top: 1em;
-	padding: 1em;
 	text-align: center;
 }
 
@@ -1000,7 +1004,11 @@ body.search-results .entry-title a {
 
 .page-id-170 ul.wp-block-latest-posts li {
 	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
+	line-height: 0;
 	text-align: center;
 }
 

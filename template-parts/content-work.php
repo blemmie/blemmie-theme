@@ -19,7 +19,9 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php blemmie_post_thumbnail(); ?>
+	<!--
+	<?php /*blemmie_post_thumbnail(); */?>
+	-->
 
 	<div class="entry-content">
 		<?php
