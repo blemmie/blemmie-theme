@@ -1,10 +1,7 @@
-@font-face {
-	font-family: 'AvenirNext';
-	src: url('../fonts/AvenirNext_Variable.ttf') format('truetype');
-}
+@import url('https://rsms.me/inter/inter.css');
 
 // stylelint-disable value-keyword-case
-$font__main: "Avenir Next", Century Gothic, CenturyGothic, sans-serif;
+$font__main: "Inter var", Helvetica, Arial, sans-serif;
 $font__serif: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 $font__line-height: 2em;
 
@@ -15,9 +12,8 @@ $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
 
-body {
-	font-family: $font__main;
-	font-weight: 400;
-	color: $color__text;
-	line-height: $font__line-height;
-}
+// Font font-variation-settings: 
+$font__var__light: "wght" 300, "slnt" 0;
+$font__var__semi: "wght" 500, "slnt" 0;
+$font__var__bold: "wght" 600, "slnt" 0;
+$font__var__extrabold: "wght" 700, "slnt" 0;

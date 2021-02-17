@@ -2,9 +2,14 @@ body, html {
 	height: 100%;
 }
 
+html {
+
+}
+
 body {
 	//background-color: #fafafa;
 	background-color: $color__background-body;
+	 
 	//background-color: $black;
 	//background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjUiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDQwLDQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMTI5KSAiPjxyZWN0IGlkPSJwYXR0ZXJuLWJhY2tncm91bmQiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbGw9InJnYmEoMjM3LCAxMzcsIDU0LDEpIj48L3JlY3Q+IDxwYXRoIGZpbGw9InJnYmEoMTUxLCA5MCwgMjIsMSkiIGQ9Ik0xNSwxNSBoMTAgdjEwIGgtMTAgeiI+PC9wYXRoPjxwYXRoIGZpbGw9InJnYmEoMjM2LCAyMDEsIDc1LDEpIiBkPSJNLTEwIC0xMCBoNjAgdjYwIGgtNjB6IE0xNyAxNyB2NiBoNiB2LTYgeiI+PC9wYXRoPjwvcGF0dGVybj4gIDwvZGVmcz4gPHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSI+PC9yZWN0Pjwvc3ZnPg==");
 	//background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjUiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDQwLDQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoMTI5KSAiPjxyZWN0IGlkPSJwYXR0ZXJuLWJhY2tncm91bmQiIHdpZHRoPSI0MDAlIiBoZWlnaHQ9IjQwMCUiIGZpbGw9InJnYmEoMjM3LCAxMzcsIDU0LDEpIj48L3JlY3Q+IDxwYXRoIGZpbGw9InJnYmEoMTYwLCAxNzQsIDE5MiwxKSIgZD0iTTE1LDE1IGgxMCB2MTAgaC0xMCB6Ij48L3BhdGg+PHBhdGggZmlsbD0icmdiYSgyMzgsIDIzOCwgMjM4LDEpIiBkPSJNLTEwIC0xMCBoNjAgdjYwIGgtNjB6IE0xNyAxNyB2NiBoNiB2LTYgeiI+PC9wYXRoPjwvcGF0dGVybj4gIDwvZGVmcz4gPHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgaGVpZ2h0PSIxMDAlIiB3aWR0aD0iMTAwJSI+PC9yZWN0Pjwvc3ZnPg==");
@@ -28,22 +33,12 @@ body {
 
 
 .site {
-	//background-color: rgba(255,255,255, .7);
-	//background-image: $background__pattern;
-	//padding: .5em 20px 1em;
-	//background-color: $white;
-	border-left: 20px solid #ffea00;
-	//margin-left: 10px;
-	max-width: 1200px;
-
-	@media (min-width: 320px) {
-		//margin-left: 20px;
-	}
+	border-left: 1em solid $color__primary;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 20em) {
 	.site {
-		padding: 1em 30px 3em;
+		padding: 1em 1em 3em;
 	}
 }
 @media (min-width: 600px) {
@@ -51,12 +46,11 @@ body {
 		//padding: 1em 1em 1em 5em;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width:48em) {
 	.site {
-		padding: 1.5em 10%;
 	}
 }
-@media (min-width: 1024px) {
+@media (min-width:64em) {
 	.site {
 		//padding: 2em 15%;
 	}
@@ -76,12 +70,10 @@ body {
 }
 
 .site-main {
-	border-top: 2px solid $black;
 	//background-color: $color__background-body;
 	//background-color: $white;
 	//background-image: $background__pattern;
 	//border: 1px solid $color__background-lines; 
-	padding-top: 1.5em;
 	margin-bottom: 3em;
 }
 

@@ -31,9 +31,7 @@ ul.wp-block-latest-posts {
 	}
 
 	a {
-		font-weight: 500;
-		//color: $black;
-		//background-color: $black;
+		font-variation-settings: $font__var__semi;
 	}
 }
 
@@ -99,13 +97,14 @@ body.search-results {
 	grid-template-rows: auto;
 	column-gap: 30px;
   	//row-gap: 0;
-  	align-items: stretch;
-  	justify-content: stretch;
+  	//align-items: stretch;
+  	//justify-content: stretch;
+  	place-content: center;
 
-  	@media (min-width: 450px) {
+  	@media (min-width: 28em) {
   		grid-template-columns: 1fr 1fr;
   	}
-  	@media (min-width: 768px) {
+  	@media (min-width:48em) {
   		grid-template-columns: 1fr 1fr 1fr;
   	}
 
@@ -131,6 +130,8 @@ body.search-results {
   		justify-content: center;
   		align-items: center;
   		color: transparent;
+
+  		font-variation-settings: $font__var__light;
 
   		&:hover,
   		&:active,

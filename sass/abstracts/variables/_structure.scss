@@ -1,2 +1,17 @@
 $size__site-main: 100%;
 $size__site-sidebar: 100%;
+$size__column-gap: 3em;
+$size__row-gap: 3em;
+
+// breakpoints
+$bg-xs: 20em;  //= 320px
+$bp-sm: 28em; //= 448px
+$bg-md: 48em;  //= 768px
+$bg-lg: 64em;  //= 1024px
+
+// Widths main - sidebar
+
+@media (min-width: $bg-xs) {
+	$size__site-main: auto;
+	$size__site-sidebar: 20%;
+}

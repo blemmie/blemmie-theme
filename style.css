@@ -49,18 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-@font-face {
-	font-family: 'AvenirNext';
-	src: url("../fonts/AvenirNext_Variable.ttf") format("truetype");
-}
-
-body {
-	font-family: "Avenir Next", Century Gothic, CenturyGothic, sans-serif;
-	font-weight: 400;
-	color: #2d2d2d;
-	line-height: 2em;
-}
-
+@import url("https://rsms.me/inter/inter.css");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -394,6 +383,17 @@ html {
 --------------------------------------------------------------*/
 /* Typography
 --------------------------------------------- */
+body {
+	font-family: "Inter var", Helvetica, Arial, sans-serif;
+	font-variation-settings: "wght" 300, "slnt" 0;
+	color: #2d2d2d;
+	line-height: 2em;
+}
+
+b, strong {
+	font-variation-settings: "wght" 600, "slnt" 0;
+}
+
 body,
 button,
 input,
@@ -401,13 +401,13 @@ select,
 optgroup,
 textarea {
 	color: #2d2d2d;
-	font-family: "Avenir Next", Century Gothic, CenturyGothic, sans-serif;
+	font-family: "Inter var", Helvetica, Arial, sans-serif;
 	font-size: 110%;
 	font-size: calc(1.1em + 0.2vw);
 	line-height: 1.85em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	body,
 	button,
 	input,
@@ -419,7 +419,7 @@ textarea {
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
 	body,
 	button,
 	input,
@@ -437,9 +437,18 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
 	color: #1a1a1a;
-	margin: 0 0 .85em;
+	line-height: 1em;
+	margin: 2em 0 .85em;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
 }
 
 .site-title {
@@ -462,19 +471,25 @@ h6 {
 }
 
 h1 {
-	font-size: 1.75em;
-	font-weight: 500;
+	font-variation-settings: "wght" 700, "slnt" 0;
+	font-size: 4em;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 h2 {
-	font-size: 1.55em;
-	font-weight: 500;
-	border-bottom: 2px solid #1a1a1a;
-	padding-bottom: .5em;
+	font-size: 2em;
+	font-variation-settings: "wght" 700, "slnt" 0;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
-body.home h1 {
-	display: none;
+h3 {
+	font-variation-settings: "wght" 600, "slnt" 0;
+}
+
+h4 {
+	font-variation-settings: "wght" 500, "slnt" 0;
 }
 
 dfn,
@@ -533,6 +548,10 @@ p:last-of-type {
 	margin-bottom: 2.4em;
 }
 
+p + figure {
+	margin-top: 2.4em;
+}
+
 a, a:visited {
 	color: #304ffe;
 	transition: all .25s ease-in-out;
@@ -561,19 +580,12 @@ body {
 }
 
 .site {
-	border-left: 20px solid #ffea00;
-	max-width: 1200px;
+	border-left: 1em solid #ffea00;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 20em) {
 	.site {
-		padding: 1em 30px 3em;
-	}
-}
-
-@media (min-width: 768px) {
-	.site {
-		padding: 1.5em 10%;
+		padding: 1em 1em 3em;
 	}
 }
 
@@ -585,8 +597,6 @@ body {
 }
 
 .site-main {
-	border-top: 2px solid #1a1a1a;
-	padding-top: 1.5em;
 	margin-bottom: 3em;
 }
 
@@ -656,13 +666,14 @@ img {
 	max-width: 100%;
 }
 
-.wp-block-image {
+figure {
 	background-color: whitesmoke;
 	line-height: 0;
-	margin: 1em 0;
+	margin-bottom: 1em;
+	margin: 0 0 1em;
 }
 
-.wp-block-image figcaption {
+figure figcaption {
 	color: #6d6d6d;
 	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: .85em;
@@ -798,6 +809,41 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+	display: grid;
+	grid-template-areas: " . header header header . . . " " . . main main . sidebar . " " . . footer footer . . . ";
+}
+
+@media (min-width: 1000px) {
+	.site {
+		grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 1fr;
+	}
+}
+
+.site-header {
+	grid-area: header;
+}
+
+.site-main {
+	grid-area: main;
+	overflow: hidden;
+	/* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+	grid-area: sidebar;
+}
+
+.site-footer {
+	grid-area: footer;
+}
+
+.no-sidebar .site {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas: "header" "main" "footer";
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -813,13 +859,13 @@ textarea {
 	text-transform: lowercase;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 20em) {
 	.main-navigation a {
 		margin: 0 .5em;
 	}
 }
 
-@media (min-width: 450px) {
+@media (min-width: 28em) {
 	.main-navigation a {
 		margin: 0 1em;
 	}
@@ -928,7 +974,7 @@ ul.wp-block-latest-posts li {
 }
 
 ul.wp-block-latest-posts a {
-	font-weight: 500;
+	font-variation-settings: "wght" 500, "slnt" 0;
 }
 
 .wp-block-latest-posts__post-author,
@@ -983,17 +1029,16 @@ body.search-results .entry-title a {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	column-gap: 30px;
-	align-items: stretch;
-	justify-content: stretch;
+	place-content: center;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 28em) {
 	.page-id-170 ul.wp-block-latest-posts {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	.page-id-170 ul.wp-block-latest-posts {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -1019,6 +1064,7 @@ body.search-results .entry-title a {
 	justify-content: center;
 	align-items: center;
 	color: transparent;
+	font-variation-settings: "wght" 300, "slnt" 0;
 }
 
 .page-id-170 ul.wp-block-latest-posts li > a:hover, .page-id-170 ul.wp-block-latest-posts li > a:active, .page-id-170 ul.wp-block-latest-posts li > a:focus {
@@ -1043,13 +1089,8 @@ body.search-results .entry-title a {
 
 /* Widgets
 --------------------------------------------- */
-.widget-area {
-	border-top: 2px solid #1a1a1a;
-	margin-top: 2em;
-	padding-top: 1em;
-}
-
 .widget {
+	background-color: concrete;
 	margin: 0 0 1.5em;
 }
 
@@ -1059,6 +1100,7 @@ body.search-results .entry-title a {
 
 .widget:not(.widget_search) {
 	font-size: .8em;
+	line-height: 1.65em;
 }
 
 .widget_search {

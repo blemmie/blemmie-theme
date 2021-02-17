@@ -1,3 +1,15 @@
+
+body {
+	font-family: $font__main;
+	font-variation-settings: $font__var__light;
+	color: $color__text;
+	line-height: $font__line-height;
+}
+
+b, strong {
+	font-variation-settings: $font__var__bold;
+}
+
 body,
 button,
 input,
@@ -10,11 +22,11 @@ textarea {
 	font-size: calc(1.1em + 0.2vw);
 	line-height: 1.85em;
 
-	@media (min-width: 768px) {
+	@media (min-width:48em) {
 		font-size: 115%;
 		font-size: calc(1.1em + 0.2vw);
 	}
-	@media (min-width: 1024px) {
+	@media (min-width:64em) {
 		font-size: 135%;
 		font-size: calc(1.1em + 0.2vw);
 	}

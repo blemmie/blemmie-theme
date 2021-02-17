@@ -11,10 +11,11 @@ img {
 	max-width: 100%; // Adhere to container width.
 }
 
-.wp-block-image {
+figure {
 	background-color: $white;
 	line-height: 0;
-	margin: 1em 0; // Extra wide images within figure tags don't overflow the content area.
+	margin-bottom: 1em; // Extra wide images within figure tags don't overflow the content area.
+	margin: 0 0 1em; 
 
 	figcaption {
 		color: $color__text-understated;

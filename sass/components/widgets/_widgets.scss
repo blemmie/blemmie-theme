@@ -1,10 +1,9 @@
 .widget-area {
-	border-top: 2px solid $black;
-	margin-top: 2em;
-	padding-top: 1em;
 }
 
 .widget {
+	background-color: concrete;
+	//padding: 1em 2em;
 	margin: 0 0 1.5em;
 
 	// Make sure select elements fit in widgets.
@@ -14,6 +13,7 @@
 
 	&:not(.widget_search) {
 		font-size: .8em;
+		line-height: 1.65em;
 	}
 }
 

@@ -4,9 +4,12 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
 	color: $black;
-	margin: 0 0 .85em;
+	line-height: 1em;
+	margin: 2em 0 .85em;
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 
@@ -32,19 +35,25 @@ h6 {
 
 h1 {
 	//font-family: $font__serif;
-	font-size: 1.75em;
-	font-weight: 500;
+	font-variation-settings: $font__var__extrabold;
+	font-size: 4em;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 h2 {
 	//background-image: $background__pattern;
 	//font-family: $font__serif;
-	font-size: 1.55em;
-	font-weight: 500;
-	border-bottom: 2px solid $black;
-	padding-bottom: .5em; 
+	font-size: 2em;
+	font-variation-settings: $font__var__extrabold;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
-body.home h1 {
-	display: none;
+h3 {
+	font-variation-settings: $font__var__bold;
+}
+
+h4 {
+	font-variation-settings: $font__var__semi;
 }
