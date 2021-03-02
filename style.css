@@ -1091,6 +1091,8 @@ body.search-results .entry-title a {
 --------------------------------------------- */
 .widget {
 	background-color: concrete;
+	border: 2px solid #304ffe;
+	padding: 1em 2em;
 	margin: 0 0 1.5em;
 }
 
