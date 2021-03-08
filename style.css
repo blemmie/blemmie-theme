@@ -459,7 +459,7 @@ h6:first-child {
 .site-title a,
 .site-title a:visited {
 	color: #1a1a1a;
-	background-color: #ffea00;
+	background-color: #1de9b6;
 	text-decoration: none;
 	transition: background-color .15s ease-in-out;
 }
@@ -553,7 +553,7 @@ p + figure {
 }
 
 a, a:visited {
-	color: #304ffe;
+	color: #3d5afe;
 	transition: all .25s ease-in-out;
 }
 
@@ -580,7 +580,7 @@ body {
 }
 
 .site {
-	border-left: 1em solid #ffea00;
+	border-left: 1em solid #1de9b6;
 }
 
 @media (min-width: 20em) {
@@ -605,7 +605,7 @@ body {
 }
 
 hr {
-	background-color: #ffea00;
+	background-color: #1de9b6;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -689,11 +689,11 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #304ffe;
+	color: #3d5afe;
 }
 
 a:visited {
-	color: #304ffe;
+	color: #3d5afe;
 }
 
 a:hover, a:focus, a:active {
@@ -734,7 +734,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: #ffea00;
+	background: #1de9b6;
 	color: #1a1a1a;
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
@@ -744,7 +744,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #304ffe;
+	border-color: #3d5afe;
 }
 
 button:active, button:focus,
@@ -811,13 +811,48 @@ textarea {
 --------------------------------------------------------------*/
 .site {
 	display: grid;
-	grid-template-areas: " . header header header . . . " " . . main main . sidebar . " " . . footer footer . . . ";
+	grid-gap: 1rem;
+	grid-template-areas: " header" " main" "sidebar" " footer";
+	/*	
+
+	grid-template-columns: 1fr 1fr minmax() 3fr 1fr 2fr 1fr;
+
+	@media (min-width: 1024px) {
+		
+	}
+
+	@media (min-width: 1200px) {
+		//grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 1fr;
+	}
+	*/
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 	.site {
-		grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 1fr;
+		display: grid;
+		grid-template-areas: " header header" " main sidebar" " footer footer";
+		grid-template-columns: auto minmax(min-content, 30%);
 	}
+}
+
+@media (min-width: 1200px) {
+	.site {
+		display: grid;
+		grid-template-areas: " header header . ." " . main . sidebar" " . footer . . ";
+		grid-template-columns: 1fr minmax(min-content, 5fr) 1fr minmax(min-content, 2fr);
+	}
+}
+
+@media (min-width: 1400px) {
+	.site {
+		display: grid;
+		grid-template-areas: " header header . . ." " . main . sidebar ." " . footer . . .";
+		grid-template-columns: 1fr minmax(min-content, 5fr) 1fr minmax(min-content, 2fr) 1fr;
+	}
+}
+
+.site-header, .site-main, .site-footer, .widget-area {
+	border: 1px dashed red;
 }
 
 .site-header {
@@ -916,17 +951,17 @@ textarea {
 .main-navigation .current-menu-item > a:before,
 .main-navigation .current_page_ancestor > a:before,
 .main-navigation .current-menu-ancestor > a:before {
-	background-color: #304ffe;
+	background-color: #3d5afe;
 	height: 2px;
 }
 
 .sgl-cat-work .main-navigation .menu-item-175 a:before {
-	background-color: #304ffe;
+	background-color: #3d5afe;
 	height: 2px;
 }
 
 .sgl-cat-blog .main-navigation .menu-item-239 a:before {
-	background-color: #304ffe;
+	background-color: #3d5afe;
 	height: 2px;
 }
 
@@ -1068,7 +1103,7 @@ body.search-results .entry-title a {
 }
 
 .page-id-170 ul.wp-block-latest-posts li > a:hover, .page-id-170 ul.wp-block-latest-posts li > a:active, .page-id-170 ul.wp-block-latest-posts li > a:focus {
-	background-color: #304ffe;
+	background-color: #3d5afe;
 	color: whitesmoke;
 }
 
@@ -1091,8 +1126,8 @@ body.search-results .entry-title a {
 --------------------------------------------- */
 .widget {
 	background-color: concrete;
-	border: 2px solid #304ffe;
-	padding: 1em 2em;
+	border: 2px solid #3d5afe;
+	padding: 1em 2em .5em;
 	margin: 0 0 1.5em;
 }
 
@@ -1106,7 +1141,7 @@ body.search-results .entry-title a {
 }
 
 .widget_search {
-	background-color: #304ffe;
+	background-color: #3d5afe;
 	padding: 1em;
 }
 
@@ -1128,7 +1163,7 @@ body.search-results .entry-title a {
 }
 
 .widget_search .search-submit {
-	background-color: #ffea00;
+	background-color: #1de9b6;
 	border: none;
 	border-radius: 0;
 	flex: 1 1 30%;

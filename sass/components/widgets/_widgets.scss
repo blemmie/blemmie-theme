@@ -4,7 +4,7 @@
 .widget {
 	background-color: concrete;
 	border: 2px solid $color__secondary;
-	padding: 1em 2em;
+	padding: 1em 2em .5em;
 	margin: 0 0 1.5em;
 
 	// Make sure select elements fit in widgets.
