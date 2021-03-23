@@ -15,13 +15,18 @@ figure {
 	background-color: $white;
 	line-height: 0;
 	margin-bottom: 1em; // Extra wide images within figure tags don't overflow the content area.
-	margin: 0 0 1em; 
+	margin: 0 0 2em; 
 
 	figcaption {
 		color: $color__text-understated;
 		font-family: $font__serif;
 		font-size: .85em;
+		letter-spacing: .02em;
 		line-height: initial;
 		margin: .5em 0 1.5em;
+	}
+
+	&.wp-block-image {
+		margin-bottom: 2em;
 	}
 }

@@ -6,7 +6,7 @@ h5,
 h6 {
 	color: $black;
 	line-height: 1em;
-	margin: 2em 0 .85em;
+	margin: 2em 0 .475em;
 	&:first-child {
 		margin-top: 0;
 	}
@@ -36,18 +36,34 @@ h6 {
 h1 {
 	//font-family: $font__serif;
 	font-variation-settings: $font__var__extrabold;
-	font-size: 4em;
+	font-size: 2em;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+
+	@media (min-width: $bp-md) {
+		font-size: 3em;
+	}
+
+	@media (min-width: $bp-lg) {
+		font-size: 4em;
+	}
 }
 
 h2 {
 	//background-image: $background__pattern;
 	//font-family: $font__serif;
-	font-size: 2em;
+	font-size: 1.25em;
 	font-variation-settings: $font__var__extrabold;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+
+	@media (min-width: $bp-md) {
+		font-size: 1.75em;
+	}
+
+	@media (min-width: $bp-lg) {
+		font-size: 2em;
+	}
 }
 
 h3 {

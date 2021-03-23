@@ -4,14 +4,18 @@ $size__column-gap: 3em;
 $size__row-gap: 3em;
 
 // breakpoints
+/*
 $bg-xs: 20em;  //= 320px
 $bp-sm: 28em; //= 448px
 $bg-md: 48em;  //= 768px
 $bg-lg: 64em;  //= 1024px
+*/
+
+$bp-xs: 20em;  //= 320px;
+$bp-sm: 28em; //= 448px
+$bp-md: 53.125em; //= 850px
+$bp-lg: 75em; //= 1200
+$bp-xl: 87.5em; //= 1400
+$bp-xxl: 100em; //= 1600
 
 // Widths main - sidebar
-
-@media (min-width: $bg-xs) {
-	$size__site-main: auto;
-	$size__site-sidebar: 20%;
-}

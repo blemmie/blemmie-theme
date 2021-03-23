@@ -4,7 +4,7 @@
 .widget {
 	background-color: concrete;
 	border: 2px solid $color__secondary;
-	padding: 1em 2em .5em;
+	padding: 1em 1em .5em;
 	margin: 0 0 1.5em;
 
 	// Make sure select elements fit in widgets.
@@ -13,8 +13,23 @@
 	}
 
 	&:not(.widget_search) {
-		font-size: .8em;
+		font-size: 1em;
 		line-height: 1.65em;
+		padding: .5em 1.5em 1em;
+
+		@media (min-width: $bp-md) {
+			font-size: .8em;
+			padding: 1em 1.5em 2em;
+		}
+
+		@media (min-width: $bp-xl) {
+			padding: 1em 1.5em 2em;
+		}
+
+		@media (min-width: $bp-xxl) {
+			font-size: 1em;
+			padding: 1em 1.5em 2em;
+		}
 	}
 }
 

@@ -34,11 +34,12 @@ body {
 
 .site {
 	border-left: 1em solid $color__primary;
+	padding: 1em 1em 3em;
 }
 
 @media (min-width: 20em) {
 	.site {
-		padding: 1em 1em 3em;
+		padding: 1em 2em 3em;
 	}
 }
 @media (min-width: 600px) {
@@ -55,7 +56,7 @@ body {
 		//padding: 2em 15%;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: $bp-lg) {
 	.site {
 		//padding: 2em 25%;
 	}
@@ -74,7 +75,7 @@ body {
 	//background-color: $white;
 	//background-image: $background__pattern;
 	//border: 1px solid $color__background-lines; 
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 
 .site-info {

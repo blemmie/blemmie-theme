@@ -18,17 +18,14 @@ optgroup,
 textarea {
 	color: $color__text;
 	font-family: $font__main;
-	font-size: 110%;
-	font-size: calc(1.1em + 0.2vw);
+	font-size: 1rem;
 	line-height: 1.85em;
 
-	@media (min-width:48em) {
-		font-size: 115%;
-		font-size: calc(1.1em + 0.2vw);
+	@media (min-width: $bp-sm) {
+		font-size: 1.2rem;
 	}
-	@media (min-width:64em) {
-		font-size: 135%;
-		font-size: calc(1.1em + 0.2vw);
+	@media (min-width: $bp-lg) {
+		font-size: 1.3rem;
 	}
 }
 

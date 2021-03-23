@@ -1,5 +1,5 @@
 $min-width: 15rem;
-$GridGap: 1rem;
+$GridGap: 3rem;
 
 .site {
 	display: grid;
@@ -11,7 +11,7 @@ $GridGap: 1rem;
 			"sidebar"
 			" footer";
 
-	@media (min-width: 800px) {
+	@media (min-width: $bp-md) {
 		display: grid;
 		grid-template-areas:
 			" header header"
@@ -20,7 +20,7 @@ $GridGap: 1rem;
 		grid-template-columns: auto minmax(min-content, 30%);
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: $bp-lg) {
 		display: grid;
 		grid-template-areas:
 			" header header . ."
@@ -30,14 +30,14 @@ $GridGap: 1rem;
 		grid-template-columns: 1fr minmax( min-content, 5fr) 1fr minmax(min-content, 2fr);
 	}
 
-	@media (min-width: 1400px) {
+	@media (min-width: $bp-xl) {
 		display: grid;
 		grid-template-areas:
 			" header header . . ."
 			" . main . sidebar ."
 			" . footer . . .";
 
-		grid-template-columns: 1fr minmax( min-content, 5fr) 1fr minmax(min-content, 2fr) 1fr;
+		grid-template-columns: 1fr minmax( min-content, 5fr) 1fr minmax(min-content, 2.5fr) 1fr;
 	}
 
 	/*	
@@ -48,14 +48,14 @@ $GridGap: 1rem;
 		
 	}
 
-	@media (min-width: 1200px) {
+	@media (min-width: $bp-lg) {
 		//grid-template-columns: 1fr 1fr 3fr 3fr 1fr 2fr 1fr;
 	}
 	*/
 }
 
 .site-header, .site-main, .site-footer, .widget-area {
-	border: 1px dashed red; 
+	//border: 1px dashed red; 
 }
 
 .site-header {
