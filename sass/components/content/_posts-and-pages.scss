@@ -123,15 +123,12 @@ body.search-results {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	column-gap: 30px;
-  	//row-gap: 0;
-  	//align-items: stretch;
-  	//justify-content: stretch;
   	place-content: center;
 
-  	@media (min-width: 28em) {
+  	@media (min-width: $bp-sm) {
   		grid-template-columns: 1fr 1fr;
   	}
-  	@media (min-width:48em) {
+  	@media (min-width: $bp-lg) {
   		grid-template-columns: 1fr 1fr 1fr;
   	}
 
@@ -159,6 +156,8 @@ body.search-results {
   		color: transparent;
 
   		font-variation-settings: $font__var__light;
+  		line-height: 1.5em;
+  		text-decoration: none;
 
   		&:hover,
   		&:active,

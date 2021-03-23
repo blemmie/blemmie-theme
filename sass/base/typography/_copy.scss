@@ -48,16 +48,21 @@ big {
 
 p {
 	margin-bottom: 1.2em;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	& + figure {
+		margin-top: 2.4em;
+	}
+
+	& + ul,
+	& + ol {
+		margin-top: 2.4em;
+	}
 }
 
-
-p:last-of-type {
-	margin-bottom: 0;
-}
-
-p + figure {
-	margin-top: 2.4em;
-}
 
 a, a:visited {
 	color: $color__secondary;
