@@ -53,12 +53,11 @@ p {
 		margin-bottom: 0;
 	}
 
-	& + figure {
-		margin-top: 2.4em;
-	}
-
+	& + figure,
 	& + ul,
-	& + ol {
+	& + ol,
+	& + h2,
+	& + h3 {
 		margin-top: 2.4em;
 	}
 }

@@ -25,8 +25,23 @@ a {
 
 .more-link {
 	position: relative;
-	padding-left: 25px;
+	//padding-left: 25px;
+
+	// next
+	&:after {
+		content: '\27F6';
+		display: inline-block;
+		width: 0px;
+		padding-left: .5em;
+		position: relative;
+		transition: padding-left .2s ease-in-out;
+	}
+
+	&:hover:after {
+		padding-left: .75em;
+	}
 	
+	/*
 	&:before {
 		color: $black;
 		content: '→';
@@ -36,6 +51,7 @@ a {
 		top: .8em;
 		left: 0;
 	}
+	*/
 }
 
 .edit-link {
