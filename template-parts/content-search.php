@@ -17,13 +17,11 @@
 		<div class="entry-meta">
 			<?php
 			blemmie_posted_on();
-			blemmie_posted_by();
+			//blemmie_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php blemmie_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
