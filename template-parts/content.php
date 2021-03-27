@@ -29,16 +29,12 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php blemmie_post_thumbnail(); ?>
+	<?php if ( is_singular() ) : ?>
 
-	<div class="entry-summary">
-		<?php
-			the_excerpt();
-		?>
-	</div><!-- .entry-summary -->
+		<?php blemmie_post_thumbnail(); ?>
 
-	<!--
-	<div class="entry-content">
+		<!-- Print full content if is page -->
+		<div class="entry-content">
 		<?php
 		the_content(
 			sprintf(
@@ -63,6 +59,18 @@
 		);
 		?>
 	</div><!-- .entry-content -->
+	
+	<?php else : ?>
+
+		<!-- Print excerpt if is overview-->
+		<div class="entry-summary">
+		<?php
+			the_excerpt();
+		?>
+		</div><!-- .entry-summary -->
+	
+	<?php endif; ?>
+
 
 	<footer class="entry-footer">
 		<?php blemmie_entry_footer(); ?>
