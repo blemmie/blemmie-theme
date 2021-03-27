@@ -1,5 +1,6 @@
 a {
 	color: $color__link;
+	transition: all .25s ease-in-out;
 
 	&:visited {
 		color: $color__link-visited;
@@ -34,7 +35,7 @@ a {
 		width: 0px;
 		padding-left: .5em;
 		position: relative;
-		transition: padding-left .2s ease-in-out;
+		transition: padding-left .1s ease-in-out;
 	}
 
 	&:hover:after {

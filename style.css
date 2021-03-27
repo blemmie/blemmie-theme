@@ -727,6 +727,7 @@ table {
 --------------------------------------------- */
 a {
 	color: #3d5afe;
+	transition: all .25s ease-in-out;
 }
 
 a:visited {
@@ -767,7 +768,7 @@ a:hover, a:active {
 	width: 0px;
 	padding-left: .5em;
 	position: relative;
-	transition: padding-left .2s ease-in-out;
+	transition: padding-left .1s ease-in-out;
 }
 
 .more-link:hover:after {
@@ -784,10 +785,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: #1de9b6;
+	background-color: #1de9b6;
 	color: #1a1a1a;
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
+	transition: background-color .25s ease-in-out, color .25s ease-in-out;
 }
 
 button:hover,
@@ -1287,6 +1289,11 @@ body.archive .archive-description {
 	flex: 1 1 30%;
 	font-size: inherit;
 	padding: 5px 10px;
+}
+
+.search-form .search-submit:hover, .search-form .search-submit:focus, .search-form .search-submit:active {
+	background-color: #1a1a1a;
+	color: #1de9b6;
 }
 
 /* Media
