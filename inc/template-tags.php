@@ -32,7 +32,8 @@ if ( ! function_exists( 'blemmie_posted_on' ) ) :
 			$time_string
 		);
 
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		//echo '<span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '<span class="posted-on">' . $time_string . '</span>';
 
 	}
 endif;

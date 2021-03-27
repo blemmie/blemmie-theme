@@ -23,7 +23,7 @@
 			<div class="entry-meta">
 				<?php
 				blemmie_posted_on();
-				blemmie_posted_by();
+				//blemmie_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -35,6 +35,7 @@
 		?>
 	</div><!-- .entry-summary -->
 
+	<!--
 	<div class="entry-content">
 		<?php
 		the_content(
