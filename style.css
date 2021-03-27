@@ -862,6 +862,7 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 .site {
+	min-height: 100vh;
 	display: grid;
 	grid-gap: 3rem;
 	grid-template-areas: " header" " main" "sidebar" " footer";

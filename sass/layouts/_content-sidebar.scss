@@ -2,6 +2,7 @@ $min-width: 15rem;
 $GridGap: 3rem;
 
 .site {
+	min-height: 100vh;
 	display: grid;
 	grid-gap: $GridGap;
 
