@@ -442,7 +442,7 @@ h5,
 h6 {
 	color: #1a1a1a;
 	line-height: 1em;
-	margin: 2em 0 .475em;
+	margin: 1.75em 0 .475em;
 }
 
 h1:first-child,
@@ -580,7 +580,7 @@ p + ul,
 p + ol,
 p + h2,
 p + h3 {
-	margin-top: 2.4em;
+	margin-top: 2em;
 }
 
 a, a:visited {
